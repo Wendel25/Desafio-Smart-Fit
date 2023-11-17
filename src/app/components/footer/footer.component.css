@@ -1,0 +1,62 @@
+@font-face {
+  font-family: 'Gotham light';
+  src: url('../../../../material/fonts/gotham-light.woff2') format('woff2');
+
+  font-family: 'Gotham bold';
+  src: url('../../../../material/fonts/gotham-bold.woff2') format('woff2');
+}
+
+.footer{
+  background-color: #333333;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  padding: 2%;
+}
+
+.logo{
+  background-image: url('../../../../material/images/logo.svg');
+  width: 130px;
+  height: 100px;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.content{
+  text-align: center;
+  justify-content: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.content span{
+  font-family: 'Gotham light';
+  font-weight: 600;
+  color: #808080;
+}
+
+@media only screen and (min-width: 321px) and (max-width: 1023px) {
+  .logo{
+    height: 60px;
+    width: 130px;
+  }
+
+  .content{
+    padding: 5%;
+  }
+}
+
+@media only screen and (min-width: 1024px) and (max-width: 1199px) {
+  .logo{
+    height: 60px;
+    width: 140px;
+  }
+
+  .content{
+    padding: 5%;
+  }
+}
