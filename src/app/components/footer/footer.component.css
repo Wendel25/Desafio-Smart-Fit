@@ -11,14 +11,12 @@
   text-align: center;
   justify-content: center;
   align-items: center;
-  position: absolute;
-  bottom: 0;
   width: 100%;
   padding: 2%;
 }
 
 .logo{
-  background-image: url('../../../../material/images/logo.svg');
+  background-image: url('../../../assets/images/logo.svg');
   width: 130px;
   height: 100px;
   background-repeat: no-repeat;

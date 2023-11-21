@@ -1,0 +1,179 @@
+@font-face {
+  font-family: 'Gotham black';
+  src: url('../../../../material/fonts/gotham-black.woff2') format('woff2');
+}
+
+@font-face {
+  font-family: 'Gotham book';
+  src: url('../../../../material/fonts/gotham-book.woff2') format('woff2');
+}
+
+@font-face {
+  font-family: 'Gotham light';
+  src: url('../../../../material/fonts/gotham-light.woff2') format('woff2');
+}
+
+.content{
+  width: 80%;
+  margin:  3% 10% 0 10%;
+  border: 4px solid #ebeaea;
+  border-radius: 5px;
+}
+
+.header{
+  display: flex;
+  padding: 2%;
+  gap: 1%;
+  align-items: center;
+}
+
+.img-hour{
+  background-image: url('../../../assets/images/icon-hour.png');
+  width: 40px;
+  height: 40px;
+  background-position: center;
+  background-size: contain;
+}
+
+.header > span{
+  justify-content: center;
+  align-items: center;
+}
+
+span, label, .result{
+  color: #808080;
+  font-family: 'Gotham light';
+}
+
+.content-text{
+  margin: 0 2% 0 2%;
+}
+
+.content-text > span{
+  font-size: 25px;
+  margin-left: 10px;
+}
+
+hr{
+  margin-top: 10px;
+  border: 1px solid #ebeaea;
+}
+
+.options{
+  margin-top: 1%;
+}
+
+.option,
+.box-content,
+.btn,
+.itens-alert-title,
+.msg-alert,
+.imgs-alert{
+  display: flex;
+  justify-content: space-between;
+}
+
+.box-exemple{
+  width: 270px;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.option{
+  border-bottom: 2px solid #ebeaea;
+  align-items: center;
+}
+
+.option-content,
+.unit-closed{
+  display: flex;
+  gap: 10px;
+}
+
+.option-content{
+  font-size: 17px;
+  padding: 1% 0 1% 0;
+}
+
+input[type="radio"],
+input[type="checkbox"] {
+  width: 18px;
+  height: 18px;
+  cursor: pointer;
+}
+
+.box-content{
+  padding: 2% 0 2% 0;
+}
+
+.result > p > span{
+  font-family: 'Gotham black';
+}
+
+.btn{
+  width: 50%;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  gap: 5%;
+  margin: 2% 25% 2% 25%;
+}
+
+.box-btn{
+  width: 100%;
+}
+
+button{
+  border: none;
+  border-radius: 5px;
+  padding: 15px;
+  font-size: 17px;
+  font-family: 'Gotham black';
+  cursor: pointer;
+  text-transform: uppercase;
+}
+
+.find-unit > button{
+  background-color: #FFB612;
+  width: 300px;
+}
+
+.delete > button{
+  background-color: #fff;
+  width: 300px;
+  border: 2px solid #d3d3d3;
+}
+
+.itens-alert{
+  background-color: #eeecec95;
+  padding: 2%;
+  width: 80%;
+  margin-top: 5%;
+  margin:  3% 10% 0 10%;
+  margin-bottom: 20%; /* TIRAR AQUI*/
+}
+
+.box-exemple > h1{
+  font-family: 'Gotham black';
+  font-size: 20px;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.imgs-alert{
+  width: 180px;
+  gap: 20px;
+  padding: 10% 0 10% 0;
+  margin-left: 20px;
+}
+
+.imgs-alert > img{
+  width: 70px;
+  height: 70px;
+}
+
+.msg-alert > p{
+  font-family: 'Gotham book';
+}

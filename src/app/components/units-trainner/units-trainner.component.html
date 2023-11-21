@@ -1,0 +1,81 @@
+<section class="content">
+  <div class="header">
+    <div class="img-hour"></div>
+    <span>Horário</span>
+  </div>
+
+  <div class="content-text">
+    <form>
+      <span>{{ title }}</span>
+      <hr>
+
+      <div class="options">
+        <div class="option" *ngFor="let period of radio">
+          <div class="option-content">
+            <input type="radio" name="periodo" [(ngModel)]="selectedPeriod" [value]="period[0]">
+            <label>{{ period[0] }}</label>
+          </div>
+          <span>{{ period[1] }}</span>
+        </div>
+      </div>
+
+      <div class="box-content">
+        <div class="unit-closed">
+          <input type="checkbox" name="units-closed" [(ngModel)]="showClosedUnits">
+          <span>Exibir unidades fechadas</span>
+        </div>
+
+        <div class="result">
+          <p>Resutados encontrados:
+            <span> {{ quantity }} </span>
+          </p>
+        </div>
+      </div>
+
+      <div class="btn">
+        <div class="box-btn find-unit">
+          <button type="button" (click)="findUnit();"> Encontrar unidade </button>
+        </div>
+
+        <div class="box-btn delete">
+          <button type="reset"> Limpar </button>
+        </div>
+      </div>
+
+      <mat-progress-bar color="warn" *ngIf="loading" mode="indeterminate"></mat-progress-bar>
+    </form>
+  </div>
+</section>
+
+<section>
+  <div class="itens-alert">
+    <div class="itens-alert-title">
+      <div *ngFor="let item of itensAlert" class="{{ item.classe }}">
+        <div class="box-exemple">
+          <h1>{{ item.nome }}</h1>
+
+          <div class="imgs-alert">
+            <img *ngIf="item.imgRequired" [src]="item.imgRequired">
+            <img *ngIf="item.imgRecomend" [src]="item.imgRecomend">
+            <img *ngIf="item.imgPartial" [src]="item.imgPartial">
+            <img *ngIf="item.imgProibied" [src]="item.imgProibied">
+            <img *ngIf="item.imgLibered" [src]="item.imgLibered">
+            <img *ngIf="item.imgClosed" [src]="item.imgClosed">
+          </div>
+
+          <div class="msg-alert">
+            <p>{{ item.required}}</p>
+            <p>{{ item.alert}}</p>
+            <p>{{ item.proibied}}</p>
+            <p>{{ item.libered}}</p>
+            <p>{{ item.closed}}</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="result-search">
+
+</section>
