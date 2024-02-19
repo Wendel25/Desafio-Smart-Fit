@@ -27,7 +27,3 @@ Para executar a aplicação localmente, siga os passos abaixo:
 ```bash
   npm start
 ```
-
-## 💥 App Rodando
-
-<img width="867" alt="image" src="https://github.com/Wendel25/smart-fit/assets/69828304/1dcf6fbe-12e4-4d72-83d4-2058551c2e3d">
