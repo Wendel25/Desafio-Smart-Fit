@@ -3,7 +3,7 @@
 
 <br>
 Esse projeto, foi utilizado Angular
-<br>
+<br><br>
 
 ## ⚙️ Como Executar
 
